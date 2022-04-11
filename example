@@ -1,0 +1,35 @@
+---
+title: "Module12"
+author: "Cesar Moy"
+date: 'April 11, 2022 '
+output:
+  html_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+### *Using cars data Frame*
+
+
+```{r cars}
+library(ggplot2)
+cars <- mtcars
+
+```
+
+## Including Plots
+### **Plots explain cooralation **
+*Using cars built it data frame*
+
+
+```{r pressure, echo=FALSE}
+plot(x= cars$hp, y= cars$wt)
+plot(x = cars$disp, y =cars$cyl)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
